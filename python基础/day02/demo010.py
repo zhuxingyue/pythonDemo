@@ -17,3 +17,5 @@ enum1 = enumerate(lis, 4)
 # 遍历枚举对象，取出枚举中的元素
 for i, item in enum1:
     print(i, "  ", item)
+
+print()
