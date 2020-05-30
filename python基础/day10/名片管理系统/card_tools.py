@@ -40,14 +40,14 @@ def update_carde(card):
     @param card: 名片对象字典
     @return: 返回bool值
     """
-    func_num = int(input("请选择功能：1/修改，2/删除 :"))
-    if func_num == 1:
+    func_num = input("请选择功能：1/修改，2/删除 :")
+    if func_num == "1":
         card["name"] = input("修改名称：")
         card["mobile"] = input("修改电话：")
         card["qq"] = input("修改qq：")
         card["email"] = input("修改邮箱：")
         return False
-    elif func_num == 2:
+    elif func_num == "2":
         return True
     else:
         print("功能选择错误！！")

@@ -12,16 +12,16 @@ while True:
     print("****************************")
 
     func_num = input("请选择功能:")
-    func_num = int(func_num)
 
-    if func_num == 0:
+    if func_num == "0":
+        print("欢迎再次使用【名片管理系统】！")
         break
-    elif func_num == 1:
+    elif func_num == "1":
         add_card()
-    elif func_num == 2:
+    elif func_num == "2":
         print("显示名片内容：")
         display_all()
-    elif func_num == 3:
+    elif func_num == "3":
         search_card()
     else:
-        print("输入的数字：%d功能错误，没有该功能" % func_num)
+        print("输入的：%d功能错误" % func_num)
